@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :cards
   resources :lists
-  root 'home#index'
+  root 'lists#index'
 end
